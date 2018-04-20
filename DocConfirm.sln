@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26929.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocConfirm", "DocConfirm\DocConfirm.csproj", "{EDB8A00C-49DE-4AE5-B7D8-EE72B8E11BAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocConfirm", "DocConfirm\DocConfirm.csproj", "{EDB8A00C-49DE-4AE5-B7D8-EE72B8E11BAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocConfirm.UnitTests", "DocConfirm.UnitTests\DocConfirm.UnitTests.csproj", "{9A23D130-857D-4DCC-B564-FDAA19969FA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EDB8A00C-49DE-4AE5-B7D8-EE72B8E11BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDB8A00C-49DE-4AE5-B7D8-EE72B8E11BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDB8A00C-49DE-4AE5-B7D8-EE72B8E11BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A23D130-857D-4DCC-B564-FDAA19969FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A23D130-857D-4DCC-B564-FDAA19969FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A23D130-857D-4DCC-B564-FDAA19969FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A23D130-857D-4DCC-B564-FDAA19969FA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

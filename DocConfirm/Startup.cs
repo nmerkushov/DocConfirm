@@ -7,8 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using LinqToDB;
 using LinqToDB.Data;
 using DocConfirm.Linq2DBContext;
+using DocConfirm.Services;
 
 
 namespace DocConfirm
@@ -25,6 +27,9 @@ namespace DocConfirm
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+			services.AddScoped<IDocConfirmDB, DocConfirmDB>();
+			services.AddScoped<IRequestService, RequestService>();
+
             services.AddMvc();
         }
 

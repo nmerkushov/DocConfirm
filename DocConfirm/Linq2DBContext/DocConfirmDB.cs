@@ -3,8 +3,13 @@ using LinqToDB.Data;
 using DocConfirm.Models;
 
 namespace DocConfirm.Linq2DBContext
-{
-	public class DocConfirmDB : DataConnection
+{	
+	public interface IDocConfirmDB 
+	{
+		ITable<Request> Requests { get; }
+	}
+
+	public class DocConfirmDB : DataConnection, IDocConfirmDB
 	{
 		public DocConfirmDB() : base("DocConfirm") { }
 
