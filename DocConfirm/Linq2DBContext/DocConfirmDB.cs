@@ -4,7 +4,7 @@ using DocConfirm.Models;
 
 namespace DocConfirm.Linq2DBContext
 {	
-	public interface IDocConfirmDB 
+	public interface IDocConfirmDB : IDataContext
 	{
 		ITable<Request> Requests { get; }
 	}

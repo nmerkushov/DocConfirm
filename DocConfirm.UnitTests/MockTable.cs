@@ -19,8 +19,6 @@ namespace DocConfirm.UnitTests
 			_entities = entities;
 		}
 
-		#region ITable<T> Members
-
 		public IEnumerator<T> GetEnumerator()
 		{
 			return _entities.GetEnumerator();
@@ -39,7 +37,7 @@ namespace DocConfirm.UnitTests
 			}
 			set
 			{
-				//
+				throw new NotImplementedException();
 			}
 		}
 
@@ -74,36 +72,45 @@ namespace DocConfirm.UnitTests
 			throw new NotImplementedException();
 		}
 
-
-		// no release - return null
 		public Task<TResult> ExecuteAsync<TResult>(Expression expression, CancellationToken token)
 		{
-			return null;
+			throw new NotImplementedException();
 		}
 
 		public IQueryable CreateQuery(Expression expression)
 		{
-			return null;
+			throw new NotImplementedException();
 		}
 
 		public IQueryable<TElement> CreateQuery<TElement>(Expression expression)
 		{
-			return null;
+			throw new NotImplementedException();
 		}
 
 		public object Execute(Expression expression)
 		{
-			return null;
+			throw new NotImplementedException();
 		}
 
 		public TResult Execute<TResult>(Expression expression)
 		{
-			return default(TResult);
+			throw new NotImplementedException();
 		}
-		public string SqlText { get; }
-		public IDataContext DataContext { get; }
 
+		public string SqlText
+		{
+			get
+			{
+				throw new NotImplementedException();
+			}
+		}
 
-		#endregion ITable<T> Members
+		public IDataContext DataContext
+		{
+			get
+			{
+				throw new NotImplementedException();
+			}
+		}
 	}
 }
